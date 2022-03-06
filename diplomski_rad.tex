@@ -1,17 +1,50 @@
-\documentclass[]{article}
-
-%opening
-\title{}
-\author{}
+\documentclass[times, utf8, diplomski]{fer}
+\usepackage{booktabs}
 
 \begin{document}
 
+% TODO: Navedite broj rada.
+\thesisnumber{000}
+
+\title{Programska podrška sustava za određivanje i upravljanje orijentacijom satelita}
+
+\author{Ivan Vnučec}
+
 \maketitle
 
+% Ispis stranice s napomenom o umetanju izvornika rada. Uklonite naredbu \izvornik ako želite izbaciti tu stranicu.
+\izvornik
+
+% TODO: dodaj zahvalu
+\zahvala{Ovdje ide zahvala}
+
+\tableofcontents
+
+\chapter{Uvod}
+Nanosateliti CubeSat formata postaju sve popularniji u komercijalnim i znanstvenim misijama. Broj lansiranih nanosatelita raste iz godine u godinu. Sustav za određivanje i upravljanje orijentacijom satelita jedan je od najvažnijih sustava odgovoran za stabilno i ispravno usmjeravanje satelita i njegovog korisnog tereta (antene, kamere, senzori i sl.). Zadatak ovog sustava je pomoću dostupnih senzora odrediti orijentaciju satelita te je automatski ispraviti s obzirom na željenu orijentaciju koristeći se dostupnim aktuatorima. Tema diplomskog rada je razvoj programske podrške za model satelita koja omogućuje pouzdano određivanje i upravljanje orijentacijom satelita i njegovom kutnom brzinom. U radu je potrebno opisati korištene senzore i aktuatore, način matematičkog zapisa orijentacije satelita te odabranu metodu upravljanja orijentacijom i kutnom brzinom satelita. Potrebno je implementirati programsku podršku za određivanje i upravljanje orijentacijom na ugradbenom računalnom sustavu te objasniti osnovne blokove programskog koda uz pripadne grafove i dijagrame toka. U radu je također potrebno razviti osnovni kinematički model satelita, opisati optimizaciju PID regulatora za kontrolu orijentacije te izložiti rezultate eksperimentalne verifikacije implementiranih algoritama. 
+
+% TODO: dodaj zakljucak
+\chapter{Zaključak}
+Zaključak.
+
+\bibliography{literatura}
+\bibliographystyle{fer}
+
+% TODO: dodaj sazetak
+\begin{sazetak}
+Sažetak na hrvatskom jeziku.
+
+% TODO: dodaj kljucne rijeci
+\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+\end{sazetak}
+
+\engtitle{Software for satellite attitude determination and control system}
+% TODO: Navedite Abstract
 \begin{abstract}
+Abstract.
 
+% TODO: Navedite Keywords
+\keywords{Keywords.}
 \end{abstract}
-
-\section{}
 
 \end{document}
