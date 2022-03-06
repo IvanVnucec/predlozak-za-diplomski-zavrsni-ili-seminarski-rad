@@ -6,7 +6,7 @@ build:
 	pdflatex diplomski_rad.tex
 
 clean:
-	rm -rf *.aux *.log *.pdf *.synctex.gz *.blg *.toc
+	rm -rf diplomski_rad.aux diplomski_rad.log diplomski_rad.pdf diplomski_rad.synctex.gz diplomski_rad.blg diplomski_rad.toc
 
 help:
 	@echo all build clean help
