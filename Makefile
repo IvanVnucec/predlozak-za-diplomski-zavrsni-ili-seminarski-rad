@@ -1,6 +1,9 @@
-.PHONY: all build clean help
+.PHONY: all setup build clean help
 
 all: build
+
+setup:
+	sudo apt-get install -y texlive texlive-lang-european
 
 build:
 	pdflatex diplomski_rad.tex

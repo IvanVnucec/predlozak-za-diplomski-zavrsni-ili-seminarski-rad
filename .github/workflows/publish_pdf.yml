@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Install TeX Live package
-        run: sudo apt-get install -y texlive
+      - name: Install packages
+        run: sudo make setup
       
       - name: Compile LaTeX document
         run: make build
