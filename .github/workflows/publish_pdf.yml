@@ -9,12 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Install packages
-        run: sudo make setup
-      
       - name: Compile LaTeX document
-        run: make build
-          
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: diplomski_rad.tex
+      
       - name: Upload PDF document
         uses: actions/upload-artifact@v2
         with:
