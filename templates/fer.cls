@@ -16,7 +16,7 @@
 %  - numeric - stil citiranja ``[broj]''
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{fer}
+\ProvidesClass{templates/fer}
 
 % Predefinirane vrijednosti opcija
 \newif\if@fontlmodern		\global\@fontlmoderntrue
