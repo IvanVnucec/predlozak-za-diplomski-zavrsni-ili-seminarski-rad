@@ -5,7 +5,7 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     # do not run on forks
-    if: github.repository_owner == 'IvanVnucec'
+    if: github.repository == 'IvanVnucec/predlozak-za-diplomski-zavrsni-ili-seminarski-rad'
     
     runs-on: ubuntu-20.04
 
