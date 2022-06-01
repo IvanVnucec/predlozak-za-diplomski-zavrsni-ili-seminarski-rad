@@ -248,6 +248,14 @@
 }
 }
 
+\def\sveuciliste#1{\gdef\@sveuciliste{#1}}
+\def\@sveuciliste{\let\GenerateWarning=\errmessage{Sveuciliste nije definirano.
+Koristi \noexpand\sveuciliste za definiranje sveucilista.}}
+
+\def\fakultet#1{\gdef\@fakultet{#1}}
+\def\@fakultet{\@latex@warning@no@line{Fakultet nije definiran.
+Koristi \noexpand\fakultet za definiranje fakulteta.}}
+
 \def\voditelj#1{\gdef\@voditelj{#1}}
 \def\@voditelj{\@latex@warning@no@line{Voditelj nije naveden.
 Koristi \noexpand\voditelj za definiranje}}
@@ -263,9 +271,9 @@ Koristi \noexpand\thesisnumber za definiranje}}
 		\let\footnoterule\relax
 	
 		\begin{center}
-			{\large\sffamily SVEU\v{C}ILI\v{S}TE U ZAGREBU}
+			{\large\sffamily \@sveuciliste}
 			
-			{\large\bfseries\sffamily FAKULTET ELEKTROTEHNIKE I RA\v{C}UNARSTVA}
+			{\large\bfseries\sffamily \@fakultet}
 		\end{center}
 		\vfill
 		\begin{center}%
