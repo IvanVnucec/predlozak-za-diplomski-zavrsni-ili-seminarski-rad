@@ -28,6 +28,14 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
 2. (optional) If you fork the repository, check out GH Actions: on every push
 GH Actions will build the LaTex document and upload it as Actions build artifact.
 
+
+## Testing
+```
+NOTE: for developers only.
+```
+To test if all the templates are valid, run `make test`. This command will create test folder under `build/tests` and it
+will try to build all the templates into its own subdirectories.
+
 ## Files
 ```
 .

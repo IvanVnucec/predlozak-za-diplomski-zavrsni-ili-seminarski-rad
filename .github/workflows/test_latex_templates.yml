@@ -1,0 +1,26 @@
+name: Test LaTex templates
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    # do not run on forks
+    if: github.repository_owner == 'IvanVnucec'
+    
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install LaTeX tools
+        run: make setup
+      
+      - name: Compile LaTeX test documents
+        run: make test
+      
+      - name: Upload test (PDF) artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: test_artifacts
+          # CAUTION: the paths below depends on settings in Makefile
+          path: build/tests/**/*.pdf
