@@ -1,5 +1,11 @@
 # Predlozak za Diplomski, Zavrsni ili Seminarski rad
 
+<p align="middle">
+  <img src=".github/misc/dipl.png" height="280"/>
+  <img src=".github/misc/zavr.png" height="280" /> 
+  <img src=".github/misc/sem.png"  height="280" />
+</p>
+
 ## About
 Ovo je projekt koji sadrzi predlozak (template) u Latexu za Diplomski, Zavrsni ili Seminarski rad.
 Idealno za brzo pisanje i jednostavno pretvaranje u PDF.
