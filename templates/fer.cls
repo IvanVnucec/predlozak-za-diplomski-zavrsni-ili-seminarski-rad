@@ -140,33 +140,33 @@
 % Rimski brojevi stranica za zahvalu i tablicu sadržaja.
 \renewcommand{\thepage}{\roman{page}}
 
-\if@radseminar\else%
 % Ispis napomene o umetanju izvornika.
 \newcommand{\izvornik}{%
-	\newpage
-	\thispagestyle{empty}
-	\vspace*{\fill}
-	\hfil \textsl{Umjesto ove stranice umetnite izvornik Va\v{s}eg rada.} \par \hfil
-	\hfil \textsl{Da bi ste uklonili ovu stranicu obri\v{s}ite naredbu \texttt{\textbackslash izvornik}.} \hfil
-	\vspace*{\fill}
+	\if@radseminar\else%
+		\newpage
+		\thispagestyle{empty}
+		\vspace*{\fill}
+		\hfil \textsl{Umjesto ove stranice umetnite izvornik Va\v{s}eg rada.} \par \hfil
+		\hfil \textsl{Da bi ste uklonili ovu stranicu obri\v{s}ite naredbu \texttt{\textbackslash izvornik}.} \hfil
+		\vspace*{\fill}
+	\fi
 }
-\fi
 
 % Dodana zahvala
 \newif\if@dodanazahvala		\global\@dodanazahvalafalse
-\if@radseminar\else%
 % Naredba za dodavanje zahvale.
 \newcommand{\zahvala}[1]{%
-	\newpage
- 	\setcounter{page}{3}
-	\begin{center}
-	\vspace*{50\p@}%
-	\hfil {\itshape #1}\hfil
-	\vspace*{\fill}
-	\end{center}
-	\@dodanazahvalatrue
+	\if@radseminar\else%
+		\newpage
+		\setcounter{page}{3}
+		\begin{center}
+		\vspace*{50\p@}%
+		\hfil {\itshape #1}\hfil
+		\vspace*{\fill}
+		\end{center}
+		\@dodanazahvalatrue
+	\fi
 }
-\fi
 
 % TOC
 \renewcommand\tableofcontents{%
@@ -248,15 +248,13 @@
 }
 }
 
-\if@radseminar%
-  \def\voditelj#1{\gdef\@voditelj{#1}}
-  \def\@voditelj{\@latex@warning@no@line{Voditelj nije naveden.
-  Koristi \noexpand\voditelj za definiranje}}
-\else%
-  \def\thesisnumber#1{\gdef\@thesisnumber{#1}}
-  \def\@thesisnumber{\@latex@warning@no@line{Broj rada nije definiran.
-  Koristi \noexpand\thesisnumber za definiranje}}
-\fi
+\def\voditelj#1{\gdef\@voditelj{#1}}
+\def\@voditelj{\@latex@warning@no@line{Voditelj nije naveden.
+Koristi \noexpand\voditelj za definiranje}}
+
+\def\thesisnumber#1{\gdef\@thesisnumber{#1}}
+\def\@thesisnumber{\@latex@warning@no@line{Broj rada nije definiran.
+Koristi \noexpand\thesisnumber za definiranje}}
 
 \if@titlepage
 	\renewcommand\maketitle{%
