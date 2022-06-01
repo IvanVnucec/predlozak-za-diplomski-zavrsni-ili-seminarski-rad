@@ -33,7 +33,7 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
 
 ## Writing
 1. Make changes in `rad.tex` and `literatura.bib`, other files leave unchanged. 
-    - For template usage see [Help](##Help).
+    - For template usage see [Help](#help).
 
 ## Building
 1. Run `make build` to build PDF document in `build/rad.pdf`.
