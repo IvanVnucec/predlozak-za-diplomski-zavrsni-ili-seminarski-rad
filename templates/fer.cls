@@ -159,9 +159,11 @@
 \newcommand{\zahvala}[1]{%
 	\newpage
  	\setcounter{page}{3}
-	\vspace*{\fill}
+	\begin{center}
+	\vspace*{50\p@}%
 	\hfil {\itshape #1}\hfil
 	\vspace*{\fill}
+	\end{center}
 	\@dodanazahvalatrue
 }
 \fi
