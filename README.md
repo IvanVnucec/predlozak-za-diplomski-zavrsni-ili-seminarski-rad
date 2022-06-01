@@ -13,7 +13,7 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
     - otherwise, install [MiKTeX](https://miktex.org/).
 
 ## Building
-1. Run `make build` to build `rad.pdf`.
+1. Run `make build` to build PDF document in `build/rad.pdf`.
 2. (optional) If you fork the repository, check out GH Actions: on every push
 GH Actions will build the LaTex document and upload it as Actions build artifact.
 
