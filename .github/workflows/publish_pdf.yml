@@ -4,15 +4,16 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install LaTeX tools
+        run: make setup
       
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: diplomski_rad.tex
+        run: make build
       
       - name: Upload PDF document
         uses: actions/upload-artifact@v2
