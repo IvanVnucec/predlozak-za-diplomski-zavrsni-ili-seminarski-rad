@@ -12,6 +12,10 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
 2. If on Ubuntu run `sudo make install` to install LaTex tools, 
     - otherwise, install [MiKTeX](https://miktex.org/).
 
+## Writing
+1. Make changes in `rad.tex` and `literatura.bib`, other files leave unchanged. 
+    - For template usage see [Help](##Help).
+
 ## Building
 1. Run `make build` to build PDF document in `build/rad.pdf`.
 2. (optional) If you fork the repository, check out GH Actions: on every push
@@ -19,3 +23,6 @@ GH Actions will build the LaTex document and upload it as Actions build artifact
 
 ## Help
 For Latex Template help see [docs/LaTeX_template_upute.pdf](docs/LaTeX_template_upute.pdf).
+
+## References
+LaTex Predlozak i Upute smo preuzeli sa FER-ove stranice i blago modificirali (vidi git log).
