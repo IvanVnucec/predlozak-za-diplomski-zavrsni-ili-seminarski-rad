@@ -18,4 +18,4 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
 GH Actions will build the LaTex document and upload it as Actions build artifact.
 
 ## Help
-For Latex Template help see [docs/LaTeX_upute.pdf](docs/LaTeX_upute.pdf).
+For Latex Template help see [docs/LaTeX_template_upute.pdf](docs/LaTeX_template_upute.pdf).
