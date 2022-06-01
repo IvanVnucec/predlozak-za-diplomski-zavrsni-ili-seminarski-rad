@@ -6,13 +6,13 @@ setup:
 	sudo apt-get install -y texlive-latex-recommended texlive-lang-european texlive-fonts-recommended
 
 build:
-	pdflatex diplomski_rad.tex
-	bibtex diplomski_rad.aux
-	pdflatex diplomski_rad.tex
-	pdflatex diplomski_rad.tex
+	pdflatex rad.tex
+	bibtex rad.aux
+	pdflatex rad.tex
+	pdflatex rad.tex
 
 clean:
-	rm -rf diplomski_rad.aux diplomski_rad.log diplomski_rad.pdf diplomski_rad.synctex.gz diplomski_rad.blg diplomski_rad.toc diplomski_rad.bbl
+	rm -rf rad.aux rad.log rad.pdf rad.synctex.gz rad.blg rad.toc rad.bbl
 
 help:
 	@echo all setup build clean help
