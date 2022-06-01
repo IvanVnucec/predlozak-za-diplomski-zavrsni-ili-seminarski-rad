@@ -32,9 +32,9 @@ build:
 	$(call export_to_pdf,$(SRC_NAME),$(BUILD_DIR),$(SRC_NAME),$(FLAGS))
 
 # for testing only, do not modify
-TEST_DPL_DCM_CLASS := \documentclass[times, utf8, diplomski, numeric]{templates\/fer}
-TEST_ZVR_DCM_CLASS := \documentclass[times, utf8, zavrsni, numeric]{templates\/fer}
-TEST_SEM_DCM_CLASS := \documentclass[times, utf8, seminar, numeric]{templates\/fer}
+TEST_DPL_DCM_CLASS := \documentclass[times, utf8, diplomski, numeric]{templates\/template}
+TEST_ZVR_DCM_CLASS := \documentclass[times, utf8, zavrsni, numeric]{templates\/template}
+TEST_SEM_DCM_CLASS := \documentclass[times, utf8, seminar, numeric]{templates\/template}
 SRC_NAME_COPY := $(SRC_NAME)_copy
 test:
 	cp $(SRC_NAME).tex $(SRC_NAME_COPY).tex

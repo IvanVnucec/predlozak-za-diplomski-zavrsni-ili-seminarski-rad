@@ -1,4 +1,4 @@
-%% File: `fer.bst'
+%% File: `template.bst'
 %% A translation of `plainnat.bst' in Croatian 
 %%
 %% Copyright 2010 Ivan Krišto

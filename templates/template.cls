@@ -1,7 +1,4 @@
 % LaTeX predložak za pismene radove na
-% Fakultetu elektrotehnike i računarstva.
-% Verzija: 1.0
-%
 % Pokriveni radovi su: Seminar, Završni i Diplomski rad
 %
 % Opcije:
@@ -16,7 +13,7 @@
 %  - numeric - stil citiranja ``[broj]''
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templates/fer}
+\ProvidesClass{templates/template}
 
 % Predefinirane vrijednosti opcija
 \newif\if@fontlmodern		\global\@fontlmoderntrue
