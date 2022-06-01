@@ -1,3 +1,4 @@
+% TODO: Navedite tip rada (diplomski, zavrsni, seminar). Vidi docs folder za upute.
 \documentclass[times, utf8, diplomski, numeric]{templates/fer}
 \usepackage{booktabs}
 
@@ -6,9 +7,11 @@
 % TODO: Navedite broj rada.
 \thesisnumber{000}
 
-\title{Programska podrška sustava za određivanje i upravljanje orijentacijom satelita}
+% TODO: Dodaj naslov rada
+\title{Ovo je naslov rada}
 
-\author{Ivan Vnučec}
+% TODO: Dodaj ime i prezime (ili vise njih odvojene zarezima)
+\author{Ime prezime}
 
 \maketitle
 
@@ -20,34 +23,38 @@
 
 \tableofcontents
 
+% TODO: Dodaj Uvod
 \chapter{Uvod}
-Nanosateliti CubeSat formata postaju sve popularniji u komercijalnim i znanstvenim misijama. Broj lansiranih nanosatelita raste iz godine u godinu. Sustav za određivanje i upravljanje orijentacijom satelita jedan je od najvažnijih sustava odgovoran za stabilno i ispravno usmjeravanje satelita i njegovog korisnog tereta (antene, kamere, senzori i sl.). Zadatak ovog sustava je pomoću dostupnih senzora odrediti orijentaciju satelita te je automatski ispraviti s obzirom na željenu orijentaciju koristeći se dostupnim aktuatorima. Tema diplomskog rada je razvoj programske podrške za model satelita koja omogućuje pouzdano određivanje i upravljanje orijentacijom satelita i njegovom kutnom brzinom. U radu je potrebno opisati korištene senzore i aktuatore, način matematičkog zapisa orijentacije satelita te odabranu metodu upravljanja orijentacijom i kutnom brzinom satelita. Potrebno je implementirati programsku podršku za određivanje i upravljanje orijentacijom na ugradbenom računalnom sustavu te objasniti osnovne blokove programskog koda uz pripadne grafove i dijagrame toka. U radu je također potrebno razviti osnovni kinematički model satelita, opisati optimizaciju PID regulatora za kontrolu orijentacije te izložiti rezultate eksperimentalne verifikacije implementiranih algoritama. 
+Ovdje ide uvod.
 
+% Citate dodaj u `literatura.bib' file
 \chapter{Kako citirati}
-Ovako se citira na pravilan nacin \cite{oetiket2007lshort}. Ovako ide drugi citat \cite{downes2002shortams}. Evo i treceg \cite{ungar2002uvod}.
+Ovako se citira na pravilan nacin \cite{oetiket2007lshort}. I onda jos malo teksta \cite{downes2002shortams}. 
+Evo jos malo teksta kojeg citiramo ovako \cite{ungar2002uvod}.
 
 % TODO: dodaj zakljucak
 \chapter{Zaključak}
-Zaključak.
+Ovdje ide zaključak.
 
 \bibliographystyle{templates/fer}
 \bibliography{literatura}
 
 % TODO: dodaj sazetak
 \begin{sazetak}
-Sažetak na hrvatskom jeziku.
+Ovdje ide sažetak na hrvatskom jeziku.
 
 % TODO: dodaj kljucne rijeci
-\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+\kljucnerijeci{Ovdje, idu, ključne, riječi, odvojene, zarezima.}
 \end{sazetak}
 
-\engtitle{Software for satellite attitude determination and control system}
+% TODO: Dodaj naslov na engleskom
+\engtitle{Put here title on english}
 % TODO: Navedite Abstract
 \begin{abstract}
-Abstract.
+Add abstract here.
 
 % TODO: Navedite Keywords
-\keywords{Keywords.}
+\keywords{Add, keywords, here.}
 \end{abstract}
 
 \end{document}
