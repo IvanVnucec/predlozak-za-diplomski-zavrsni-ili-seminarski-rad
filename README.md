@@ -1,3 +1,5 @@
+[![Test LaTex templates](https://github.com/IvanVnucec/predlozak-za-diplomski-zavrsni-ili-seminarski-rad/actions/workflows/test_latex_templates.yml/badge.svg)](https://github.com/IvanVnucec/predlozak-za-diplomski-zavrsni-ili-seminarski-rad/actions/workflows/test_latex_templates.yml)
+
 # Predlozak za Diplomski, Zavrsni ili Seminarski rad
 
 <p align="middle">
@@ -8,7 +10,17 @@
 
 ## About
 Ovo je projekt koji sadrzi predlozak (template) u Latexu za Diplomski, Zavrsni ili Seminarski rad.
-Idealno za brzo pisanje i jednostavno pretvaranje u PDF.
+Idealno za brzo pisanje i jednostavno pretvaranje u PDF.  
+
+Predlozak se sastoji od:
+- prikladne prve (naslovne) stranice
+- stranica zahvale
+- sadrzaj
+- literatura
+- sazetak (na hrvatskom i engleskom jeziku)
+- i jos mnogo toga...
+
+Sve to je moguce generirati pomocu jedne jedine komande (vidi ispod instrukcije).
 
 ## Installing
 ```
