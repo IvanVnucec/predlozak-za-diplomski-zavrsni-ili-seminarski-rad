@@ -1,4 +1,4 @@
-# Diplomski, Zavrsni ili Seminarski rad Template
+# Predlozak za Diplomski, Zavrsni ili Seminarski rad
 
 ## About
 Ovo je projekt koji sadrzi predlozak (template) u Latexu za Diplomski, Zavrsni ili Seminarski rad.
