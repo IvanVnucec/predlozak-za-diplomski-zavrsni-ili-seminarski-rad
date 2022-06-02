@@ -54,13 +54,14 @@ will try to build all the templates into its own subdirectories.
 ├── .github             - direktorij za GitHub Actions
 ├── build               - direktorij sa build artefaktima (ukljucujuci .pdf)
 ├── docs                - direktorij sa LaTex template uputama
-├── templates           - direktorij sa LaTex template-ovima (ne modificiraj ako ne moras) 
-├── enumitem.sty        - dodatan paket za LaTex (ne modificiraj)
+├── templates           - direktorij sa LaTex template-ovima (moguce modificirat) 
+├── enumitem.sty        - dodatni paket za LaTex (ne modificiraj)
 ├── literatura.bib      - ovdje su citati (ovo modificiraj)
-├── Makefile            - omogucuje instaliravanje alata, buildanje PDF dokumenta
+├── LICENSE             - licenca
+├── Makefile            - omogucuje instaliranje alata, buildanje PDF dokumenta...
 ├── rad.tex             - ovdje je rad (ovo modificiraj)
-├── README.md           - Readme file
-└── tocbibind.sty       - dodatan paket za LaTex (ne modificiraj)
+├── README.md           - readme
+└── tocbibind.sty       - dodatni paket za LaTex (ne modificiraj)
 ```
 
 ## Help
