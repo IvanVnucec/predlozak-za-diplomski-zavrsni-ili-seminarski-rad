@@ -17,17 +17,12 @@ TEST_AUX_DPL := $(TEST_BUILD_DIR_DPL)/test_diplomski.aux
 TEST_AUX_ZVR := $(TEST_BUILD_DIR_ZVR)/test_zavrsni.aux
 TEST_AUX_SEM := $(TEST_BUILD_DIR_SEM)/test_seminar.aux
 
-# $(call export_to_pdf,src,output_dir,filename,flags)
-define export_to_pdf
-	mkdir -p $(2)
-	pdflatex $(4) -output-directory $(2) $(1).tex
-	bibtex $(2)/$(1).aux
-	pdflatex $(4) -output-directory $(2) $(1).tex
-	pdflatex $(4) -output-directory $(2) $(1).tex
-	mv $(2)/$(1).pdf $(2)/$(3).pdf 2>/dev/null; true
-endef
+SRC_BUILD_DIR:= $(BUILD_DIR)
+SRC_TEX:= $(SRC_NAME).tex
+SRC_AUX := $(BUILD_DIR)/$(SRC_NAME).aux
 
-define run_test
+# $(call export_to_pdf,build_dir,tex_path,aux_path,flags)
+define export_to_pdf
 	mkdir -p $(1)
 	pdflatex $(4) -output-directory $(1) $(2)
 	bibtex $(3)
@@ -43,12 +38,12 @@ setup:
 	sudo apt-get install -y texlive-latex-recommended texlive-lang-european texlive-fonts-recommended
 
 build:
-	$(call export_to_pdf,$(SRC_NAME),$(BUILD_DIR),$(SRC_NAME),$(FLAGS))
+	$(call export_to_pdf,$(SRC_BUILD_DIR),$(SRC_TEX),$(SRC_AUX),$(FLAGS))
 
 test:
-	$(call run_test,$(TEST_BUILD_DIR_DPL),$(TEST_TEX_DPL),$(TEST_AUX_DPL),$(FLAGS))
-	$(call run_test,$(TEST_BUILD_DIR_ZVR),$(TEST_TEX_ZVR),$(TEST_AUX_ZVR),$(FLAGS))
-	$(call run_test,$(TEST_BUILD_DIR_SEM),$(TEST_TEX_SEM),$(TEST_AUX_SEM),$(FLAGS))
+	$(call export_to_pdf,$(TEST_BUILD_DIR_DPL),$(TEST_TEX_DPL),$(TEST_AUX_DPL),$(FLAGS))
+	$(call export_to_pdf,$(TEST_BUILD_DIR_ZVR),$(TEST_TEX_ZVR),$(TEST_AUX_ZVR),$(FLAGS))
+	$(call export_to_pdf,$(TEST_BUILD_DIR_SEM),$(TEST_TEX_SEM),$(TEST_AUX_SEM),$(FLAGS))
 
 clean:
 	rm -rf $(BUILD_DIR)
