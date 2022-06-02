@@ -53,4 +53,12 @@ clean:
 	rm -rf $(BUILD_DIR)
 
 help:
-	@echo all setup build spellcheck test clean help
+	@echo "make [option]"
+	@echo "  option:"
+	@echo "     all         - build (default)"
+	@echo "     setup       - install all the tools needed for building LaTex"
+	@echo "     build       - build LaTex document"
+	@echo "     spellcheck  - run spellcheck (Croatian language)"
+	@echo "     test        - run LaTex template tests"
+	@echo "     clean       - clean LaTex build artifacts"
+	@echo "     help        - print this message"

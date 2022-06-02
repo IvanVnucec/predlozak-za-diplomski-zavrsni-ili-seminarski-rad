@@ -23,6 +23,7 @@ Predlozak se sastoji od:
 
 Sve to je moguce generirati pomocu jedne jedine komande (vidi ispod instrukcije). Takodjer
 ovaj rad je moguce pravopisno provjeriti, vidi kako [ovdje](#spellchecking).
+
 ## Installing
 ```
 NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
@@ -46,6 +47,20 @@ file contains user defined words.
 1. Run `make build` to build PDF document in `build/rad.pdf`.
 2. (optional) If you fork the repository, check out GH Actions: on every push
 GH Actions will build the LaTex document and upload it as Actions build artifact.
+
+## Usage
+For all available commands run `make help`.
+```
+make [option]
+  option:
+     all         - build (default)
+     setup       - install all the tools needed for building LaTex
+     build       - build LaTex document
+     spellcheck  - run spellcheck (Croatian language)
+     test        - run LaTex template tests
+     clean       - clean LaTex build artifacts
+     help        - print this message
+```
 
 ## Testing
 ```
@@ -75,7 +90,7 @@ will try to build all the templates into its own subdirectories.
 ```
 
 ## Help
-- for usage help run `make help`
+- for command usages help run `make help`
 - for Latex Template help see [docs/LaTeX_template_upute.pdf](docs/LaTeX_template_upute.pdf).
 
 ## References
