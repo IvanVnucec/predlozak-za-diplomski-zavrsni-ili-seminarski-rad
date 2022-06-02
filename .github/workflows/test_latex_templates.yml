@@ -23,4 +23,4 @@ jobs:
         with:
           name: test_artifacts
           # CAUTION: the paths below depends on settings in Makefile
-          path: build/tests/**/*.pdf
+          path: build/tests
