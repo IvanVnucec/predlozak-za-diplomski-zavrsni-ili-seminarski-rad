@@ -1,0 +1,10 @@
+personal_ws-1.1 hr 0 utf-8
+Ovako
+title
+Add
+abstract
+keywords
+english
+template
+templates
+ovako

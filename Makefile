@@ -1,4 +1,5 @@
 SRC_NAME := rad
+DICT_FILENAME := dictionary.txt
 BUILD_DIR := build
 TEST_DIR := tests
 FLAGS := -halt-on-error
@@ -30,15 +31,18 @@ define export_to_pdf
 	pdflatex $(4) -output-directory $(1) $(2)
 endef
 
-.PHONY: all setup build test clean help
+.PHONY: all setup build spellcheck test clean help
 
 all: build
 
 setup:
-	sudo apt-get install -y texlive-latex-recommended texlive-lang-european texlive-fonts-recommended
+	sudo apt-get install -y texlive-latex-recommended texlive-lang-european texlive-fonts-recommended aspell-hr
 
 build:
 	$(call export_to_pdf,$(SRC_BUILD_DIR),$(SRC_TEX),$(SRC_AUX),$(FLAGS))
+
+spellcheck:
+	@bash scripts/spellcheck.sh -d $(DICT_FILENAME) -s $(SRC_TEX)
 
 test:
 	$(call export_to_pdf,$(TEST_BUILD_DIR_DPL),$(TEST_TEX_DPL),$(TEST_AUX_DPL),$(FLAGS))
@@ -49,4 +53,4 @@ clean:
 	rm -rf $(BUILD_DIR)
 
 help:
-	@echo all setup build test clean help
+	@echo all setup build spellcheck test clean help
