@@ -10,7 +10,8 @@
 
 ## About
 Ovo je projekt koji sadrzi predlozak (template) u Latexu za Diplomski, Zavrsni ili Seminarski rad.
-Idealno za brzo pisanje i jednostavno pretvaranje u PDF.  
+Idealno za brzo pisanje i jednostavno pretvaranje u PDF. Cilj je da ovaj repozitorij bude _the goto_
+predlozak za sve radove (barem na FER-u).
 
 Predlozak se sastoji od:
 - prikladne prve (naslovne) stranice
