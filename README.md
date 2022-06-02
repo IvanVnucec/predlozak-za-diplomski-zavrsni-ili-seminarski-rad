@@ -29,7 +29,7 @@ NOTE: Recommended OS for developing is Ubuntu 21.10 (also Ubuntu 20.04).
 ```
 1. (recommended) Fork and clone the repository and `cd` into project root directory.
     - or if you don't know Git, download files [here](https://github.com/IvanVnucec/predlozak-za-diplomski-zavrsni-ili-seminarski-rad/archive/refs/heads/master.zip)
-2. If on Ubuntu run `sudo make install` to install LaTex tools, 
+2. If on Ubuntu run `sudo make install` to install LaTex tools (about 275 MB), 
     - otherwise, install [MiKTeX](https://miktex.org/).
 
 ## Writing
