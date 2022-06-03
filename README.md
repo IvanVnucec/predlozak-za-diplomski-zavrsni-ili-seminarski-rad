@@ -41,7 +41,14 @@ Make changes in `rad.tex` and `literatura.bib`, other files leave unchanged.
 To spellcheck the text, run `make spellcheck`. Highlighted words will appear in
 the console. To add certain unknown word (aka to disable spellcheck warnings), 
 append it to the `dictionary.txt` file located in the root dir. The `dictionary.txt`
-file contains user defined words.
+file contains user defined words.  
+Be aware that the `dictionary.txt` must follow format where at the top of the file 
+must be header like this:
+```
+personal_ws-1.1 hr 0 utf-8
+```
+To understand what all that means, user is advised to check [this](http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html) link.
+User defined words are listed below the header.
 
 ## Building
 1. Run `make build` to build PDF document in `build/rad.pdf`.
