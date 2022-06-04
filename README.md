@@ -42,6 +42,9 @@ To spellcheck the text, run `make spellcheck`. Highlighted words will appear in
 the console. To add certain unknown word (aka to disable spellcheck warnings), 
 append it to the `dictionary.txt` file located in the root dir. The `dictionary.txt`
 file contains user defined words.  
+Also, user can run Interactive spellchecking with `make interactive_spellcheck`. In
+this mode it is a little bit easier to work with spellchecking because the spellchecking
+tool is providing you with numerous word suggestions for every typo.  
 Be aware that the `dictionary.txt` must follow format where at the top of the file 
 must be header like this:
 ```
@@ -60,13 +63,14 @@ For all available commands run `make help`.
 ```
 make [option]
   option:
-     all         - build (default)
-     setup       - install all the tools needed for building LaTex
-     build       - build LaTex document
-     spellcheck  - run spellcheck (Croatian language)
-     test        - run LaTex template tests
-     clean       - clean LaTex build artifacts
-     help        - print this message
+     all                     - build (default)
+     setup                   - install all the tools needed for building LaTex
+     build                   - build LaTex document
+     spellcheck              - run interactive spellcheck (Croatian language)
+     interactive_spellcheck  - run spellcheck (Croatian language)
+     test                    - run LaTex template tests
+     clean                   - clean LaTex build artifacts
+     help                    - print this message
 ```
 
 ## Testing
