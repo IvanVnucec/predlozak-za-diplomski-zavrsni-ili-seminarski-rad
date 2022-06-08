@@ -19,4 +19,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: rad
-          path: build/rad.pdf
+          # CAUTION: the paths below depends on settings in Makefile
+          path: build
