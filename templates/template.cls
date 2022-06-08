@@ -157,7 +157,7 @@
 		\newpage
 		\setcounter{page}{3}
 		\begin{center}
-		\vspace*{50\p@}%
+		\vspace*{100\p@}%
 		\hfil {\itshape #1}\hfil
 		\vspace*{\fill}
 		\end{center}
