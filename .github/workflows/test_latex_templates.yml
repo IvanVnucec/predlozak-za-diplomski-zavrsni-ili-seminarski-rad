@@ -7,7 +7,7 @@ jobs:
     # do not run on forks
     if: github.repository == 'IvanVnucec/predlozak-za-diplomski-zavrsni-ili-seminarski-rad'
     
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2
